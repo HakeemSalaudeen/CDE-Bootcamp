@@ -7,9 +7,7 @@ ETL, or Extract, Transform, Load, is a necessary data engineering process, that 
 - mkdir
 - cd
 - curl
-- jq
 - awk
-- sed
 
 # Setting up a working directory
 I set up a dedicated directory 'raw' folder as requested in the assignment 
@@ -19,7 +17,6 @@ I set up a dedicated directory 'raw' folder as requested in the assignment
 # Extracting Data
 I used curl to fetch data from this [Link](https://www.stats.govt.nz/assets/Uploads/Annual-enterprise-survey/Annual-enterprise-survey-2023-financial-year-provisional/Download-data/annual-enterprise-survey-2023-financial-year-provisional.csv)
 
-- curl -o data.csv "(https://www.stats.govt.nz/assets/Uploads/Annual-enterprise-survey/Annual-enterprise-survey-2023-financial-year-provisional/Download-data/annual-enterprise-survey-2023-financial-year-provisional.csv)"
 
 # Transforming Data
 - Renaming the column named Variable_code to variable_code.
