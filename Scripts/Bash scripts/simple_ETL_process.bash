@@ -7,8 +7,7 @@ cd raw
 mkdir Transformed
 link="https://www.stats.govt.nz/assets/Uploads/Annual-enterprise-survey/Annual-enterprise-survey-2023-financial-year-provisional/Download-data/annual-enterprise-survey-2023-financial-year-provisional.csv"
 curl -o data.csv $link 
-
-# Transform the CSV file 
+echo 'data.csv downloaded successfully'
 
 
 # Transform the CSV file 
@@ -42,3 +41,4 @@ NR > 1 {
 
 #Load
 mv Transformed/2023_year_finance.csv ../Gold
+echo 'file loaded to Gold folder' 
